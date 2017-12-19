@@ -4,13 +4,13 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Primeros pasos programando - Tutorial</title>
+    <title>Abrir archivos excel con pandas</title>
 
-    <link rel="stylesheet" href="/theme/css/normalize.css" />
-    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
-    <link rel="stylesheet" href="/theme/css/style.css" />
-    <link rel="stylesheet" href="/theme/css/pygments.css" />	
-    <script src="/theme/js/custom.modernizr.js"></script>
+    <link rel="stylesheet" href="https://horacionakama.github.io/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://horacionakama.github.io/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://horacionakama.github.io/theme/css/style.css" />
+    <link rel="stylesheet" href="https://horacionakama.github.io/theme/css/pygments.css" />	
+    <script src="https://horacionakama.github.io/theme/js/custom.modernizr.js"></script>
 
     <!-- So Firefox can bookmark->"abo this site" -->
 
@@ -23,7 +23,7 @@
 <div class="top-bar">
 <div class="row">
     <div class="large-9 large-centered columns">
-	    <h1><a href="">Primeros pasos programando</a></h1>
+	    <h1>HoracioNakama</h1>
     </div>
 </div>
 </div>
@@ -32,8 +32,9 @@
 <div class="row">
 <div class="large-9 columns">
     <ul class="button-group navigation">
+    <li><a href="https://horacionakama.github.io" class="button secondary small">INICIO</a></li>
 
-            <li><a href="/pages/quien-soy.html" class="button secondary small">Quién soy?</a></li>
+            <li><a href="https://horacionakama.github.io/pages/quien-soy.html" class="button secondary small">Quién soy?</a></li>
     </ul>
 </div>
 </div>
@@ -46,43 +47,50 @@
 
     <!-- Main Blog Content -->
     <div class="large-9 columns">
-        
-        
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://horacionakama.github.io/posts/2017/dic/17/abrir-archivos-excel-pandas.html" rel="bookmark"
+        title="Permalink to Abrir archivos excel con pandas">Abrir archivos excel con pandas</a></h3>
+    </header>
 
-            <article>
-                <a href="/abrir-archivos-excel-con-pandas.html"><h3 class="article-title">Abrir archivos excel con pandas</h3></a>
 <h6 class="subheader" title="2017-12-17T00:00:00-03:00">dom 17 diciembre 2017
 </h6>
 
 
-<h4>Breve Introducción</h4>
-<p>Por años el excel fue mi fiel compañero para trabajos de investigación, debido a la facilidad que tenía para hacer cálculos, graficos, etc. Pero a medida que mis datos se han aumentando, los calculos y los gráficos se han complejizado ese programa me ha quedado chico.</p>
-<p>Programando con python como lengauje de programación hay muchas librerías muy útiles para abrir excel: <a href="https://openpyxl.readthedocs.io/en/default/#">Openpyxl</a>, <a href="http://xlsxwriter.readthedocs.io/">XlsxWriter</a>, y <a href="https://pandas.pydata.org/">Pandas</a></p>
-<p>En este breve tutorial utilizaremos Pandas debido a su flexibilidad y cantidad de herramientas. Mi recomendación es: utilizar Pandas si van a trabajar con muchos datos (porque tiene muchas herramientas) y aprovechar las otras liberías si quieren hacer desarrollo (Armarse programitas jeje) y solo quieren guardar datos en un archivo excel.</p>
+    <h4>Breve Introducción</h4>
+<p>Por años el excel fue mi fiel compañero para trabajos de investigación, debido a la facilidad con que podía para hacer cálculos, graficos, etc. Pero a medida que mis datos se han aumentando, los calculos y los gráficos se han complejizado ese programa me ha quedado chico.</p>
+<p>Programando con python como lenguaje de programación hay muchas librerías muy útiles para abrir excel: <a href="https://openpyxl.readthedocs.io/en/default/#">Openpyxl</a>, <a href="http://xlsxwriter.readthedocs.io/">XlsxWriter</a>, y <a href="https://pandas.pydata.org/">Pandas</a></p>
+<p>En este breve tutorial utilizaremos Pandas debido a su flexibilidad y cantidad de herramientas. Mi recomendación es: utilizar Pandas si van a trabajar con muchos datos (porque tiene muchas herramientas) y aprovechar las otras liberías si quieren hacer desarrollo (Armarse programitas jeje) y solo quieren guardar datos en un archivo excel. Pero es una sugerencia, siempre es bueno analizar cada uno sus propios proyectos y elegir las herramientas más acordes.</p>
 <h4>Requisitos</h4>
 <p>Pandas version 0.21</p>
 <h4>Datos</h4>
 <p>Para este tutorial utilizaremos un Dataset descargado de Kaggle: <a href="https://www.kaggle.com/grubenm/austin-weather">Austin Weather</a></p>
-<p>El archivo original estaba en .CSV, yo lo modifique agregandole en las primeras filas unos metadatos: Nombres de columnas, Unidades, etc.</p>
+<p>El archivo original estaba en .CSV, yo lo modifique agregandole en las primeras filas unos metadatos: Nombres de columnas, Unidades, etc.
+Pueden bajarse el archivo <a href="https://horacionakama.github.io/files/austin_weather.xlsx">aquí</a></p>
 <p>Primero importaremos las librerías necesarias</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 </pre></div>
 
 
-<p>Los archivos están guardados en la misma carpeta que el donde estoy ejecutando el codigo, por eso no es necesario colocar carpetas o subcarpetas en la dirección.</p>
+<p><img alt="Alt Text" src="https://horacionakama.github.io/images/prueba01.png">
+Los archivos están guardados en la misma carpeta que el donde estoy ejecutando el codigo, por eso no es necesario colocar carpetas o subcarpetas en la dirección.</p>
 <div class="highlight"><pre><span></span><span class="n">ipath</span> <span class="o">=</span> <span class="s1">&#39;austion_weather.xlsx&#39;</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 
-<p>Si ejecutan esto les debería mostrar las primeras 5 filas del archivo excel. Está bastante feo porque solo la primera columna tiene datos. Vamos a saltarnos unas cuantas filas para encontrar los datos.</p>
+<p>Si ejecutan esto les debería mostrar las primeras 5 filas del archivo excel. Está bastante feo porque solo la primera columna tiene datos.</p>
+<p><img alt="Pandas" src="https://horacionakama.github.io/images/pandas-excel-01.png"></p>
+<p>Vamos a saltarnos unas cuantas filas para encontrar los datos.</p>
 <div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 
+<p><img alt="Pandas" src="https://horacionakama.github.io/images/pandas-excel-02.png"></p>
 <p>Eso está mejor verdad? Ahora pandas me muestra los titulos de la columna como ser: Date, TempAvgF, TempLowF, etc</p>
+<p>Ahora veamos algo que no sé ve a simple vista. Cómo son los datos que tenemos? Para eso ejecutamos:</p>
 <div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
@@ -125,7 +133,6 @@
 <div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 
-<span class="p">:::</span><span class="n">python</span>
 <span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="s1">&#39;&gt;</span>
 <span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">1319</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">1318</span>
 <span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">21</span> <span class="n">columns</span><span class="p">):</span>
@@ -158,29 +165,40 @@
 <p>Cambio, verdad? Ahora Pandas me da nuevos tipos de datos. Los float64, que significan que son datos con comas, o sea, decimales.</p>
 <p>Las ultimas dos columnas continuan siendo object, debido a que PrecipitationSumInches tiene un valor de trazas (T). Cada vez que precipito/llovió menos de 0.01 inches (pulgadas) colocaron T en la celda. No es un dato inexistente, y debe ser tratado de una forma diferente a la anterior.</p>
 <p>La columna Events tiene descripciones de los eventos, podemos dejarlo en texto.</p>
-<p>Bien... En proximos tutoriales veremos como convertir la columna Date en tipo DateTime, esto nos permitira trabajar estos datos como una serie de tiempo.</p><p class="subheader">Category: <a href="/category/tutoriales.html">Tutoriales</a>
+<p>Bien... En proximos tutoriales veremos como convertir la columna Date en tipo DateTime, esto nos permitira trabajar estos datos como una serie de tiempo.</p>
+<p>Cualquier duda pueden dejarla en los comentarios, o sino buscarme en las redes sociales.</p>
+<p>Nota: Las imagenes son del Jupyter Notebook. Más adelante hablaré de esa herramienta, pero si ejecutan los codigos en algun IDE (Spyder, Pycharm, etc.) o de la consola interactiva de Python no deberían tener problemas en obtener los mismos resultados.</p>
+<p class="subheader">Categoria: <a href="https://horacionakama.github.io/category/tutoriales.html">Tutoriales</a>
 
-    Tagged: 
-    <a href="/tag/pandas.html">Pandas </a>
-    <a href="/tag/tutorial.html">Tutorial </a>
+    Etiquetas: 
+    <a href="https://horacionakama.github.io/tag/pandas.html">Pandas </a>
+    <a href="https://horacionakama.github.io/tag/principiante.html">Principiante </a>
+    <a href="https://horacionakama.github.io/tag/cientifico.html">Científico </a>
 </p>
 
 
 
-            </article>
 
-<div class="pagination-centered">
-<h6 class="subheader">Page 1 of 1</h6>
+	<h4>Comments</h4>
+    <div id="disqus_thread"></div>
+    <script>
 
-<p>
-
-</p>
-</div>
-
-
-
-            <!-- /#posts-list -->
-
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    var disqus_config = function () {
+    this.page.url = https://horacionakama.github.io/posts/2017/dic/17/abrir-archivos-excel-pandas.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = posts/2017/dic/17/abrir-archivos-excel-pandas.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://horacionakama.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
     </div>
     <!-- End Main Content -->
 
@@ -188,8 +206,8 @@
     <aside class="large-3 columns">
         <h5 class="sidebar-title">Links internos</h5>
         <ul class="side-nav">
-            <li><a href="/archives.html">Contenidos</a>
-            <li><a href="/tags.html">Etiquetas</a>
+            <li><a href="https://horacionakama.github.io/archives.html">Contenidos</a>
+            <li><a href="https://horacionakama.github.io/tags.html">Etiquetas</a>
 
 
         </ul>
@@ -197,17 +215,17 @@
 		
         <h5 class="sidebar-title">Categorias</h5>
         <ul class="side-nav">
-            <li><a href="/category/tutoriales.html">Tutoriales</a></li>
+            <li><a href="https://horacionakama.github.io/category/tutoriales.html">Tutoriales</a></li>
    
         </ul>
 
-        <h5 class="sidebar-title">Links</h5>
+        <h5 class="sidebar-title">Links Externos</h5>
         <ul class="side-nav">
             <li><a href="http://www.python.org.ar/aprendiendo-python/">Tutoriales - Primeros Pasos</a></li>
             <li><a href="https://www.python.org/">Descargar Python</a></li>
         </ul>
 		
-        <h5 class="sidebar-title">Social</h5>
+        <h5 class="sidebar-title">Redes Sociales</h5>
         <ul class="side-nav">
             <li><a href="https://www.linkedin.com/in/horacionakama/">Linkedin</a></li>
             <li><a href="https://twitter.com/HoracioNakama/">Twitter</a></li>
@@ -224,7 +242,7 @@
         <hr />
         <div class="row">
             <div class="large-6 columns">
-                <p>Primeros pasos programando by HoracioNakama</p>
+                <p>HoracioNakama by HoracioNakama</p>
             </div>
             </div>
     </div>
