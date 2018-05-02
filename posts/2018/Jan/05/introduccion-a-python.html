@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Introducción a Python</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1>HoracioNakama</h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+    <li><a href="" class="button secondary small">INICIO</a></li>
+
+            <li><a href="/pages/quien-soy.html" class="button secondary small">Quién soy?</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/posts/2018/Jan/05/introduccion-a-python.html" rel="bookmark"
+        title="Permalink to Introducción a Python">Introducción a Python</a></h3>
+    </header>
+
+<h6 class="subheader" title="2018-01-05T00:00:00-03:00">Fri 05 January 2018
+</h6>
+
+
+    <p>Estuve participando del Flisol 2018 Purmamarca, para quienes no conozcan que es un Flisol les dejo este <a href="https://flisol.info/">link</a>. Dado que hice la charla en Markdown, y usando Typora (un editor de Markdown que quizás le haga un post más adelante) me permitió poder exportarlo a pdf, html y por supuesto hacer este post, todo sin mucho esfuerzo. </p>
+<p>La charla fue de Introducción a Python, espero que disfruten el post y si encuentran algo que no cuadra... me avisan.</p>
+<h2>Quién soy?</h2>
+<p>Horacio Francisco Mayo @HoracioNakama (Twitter, Telegram, Instagram)</p>
+<p>Contacto: oldoger@gmail.com</p>
+<p>Estudiante avanzado de Ingeniería Agronómica</p>
+<p>Miembro de la Cátedra de Informatica y Agroclimatología de la FCA-UNJu</p>
+<p>Miembro de Python Norte y Python Argentina</p>
+<h2>Notas para la charla</h2>
+<p>[Lo que está encerrado en corchetes son acotaciones personales y para entender de una forma sencilla]</p>
+<p>Se puede interrumpir en cualquier momento, es aburrido escuchar, pueden preguntar lo que quieran.</p>
+<h2>Temario</h2>
+<p>[TOC]</p>
+<h2>Qué es Python?</h2>
+<ul>
+<li>Es un lenguaje de programación nacido en el 1991</li>
+<li>Open source: mantenido por la comunidad</li>
+<li>Tiene dos versiones: 2.x [Se busca descontinuar su uso] (2.7.x ) y 3.x [Recomendado para aprender] (Actual 3.6.x)</li>
+<li>Fácil de aprender: síntaxis sencilla</li>
+<li>Multiplataforma: está instalado en cualquier sistema GNU Linux, pero tmb puede instalarse en Windows, Mac, etc</li>
+</ul>
+<h2>Propiedades de lenguaje</h2>
+<ul>
+<li>Tipado dinamico: no hay que declarar de que tipo es el dato [Python reconoce si lo que escribiste es un número, texto, variable, etc]</li>
+<li>Compilado: puedes ejecutar tu script sin necesidad de compilar</li>
+<li>Orientado a objetos: todo en python es un objeto</li>
+<li>La biblioteca estandar tiene para trabajar con: fecha y hora, archivos zip, tar, expresiones regulares, unicode, CSV, interfaz grafica, etc.</li>
+</ul>
+<h2>Dónde encontrar información?</h2>
+<p>Python Software Foundation: www.python.org</p>
+<p>Python Argentina: www.python.org.ar, lista de correo (dónde pueden consultar sus dudas y alguien le ayudara), canal IRC</p>
+<p>Pybonacci: blog españo con tutoriales básicos y avanzados</p>
+<h2>Librerias y Frameworks exteriores</h2>
+<ul>
+<li>Diseñadas y mantenidas por la comunidad</li>
+<li><strong>Django</strong>: framework para crear sitios web.</li>
+<li><strong>Flask</strong>: librería para realizar sitios web, más pequeña que la anterior pero más moldeable que la anterior.</li>
+<li><strong>Pyinstaller</strong>: convierte mis archivos py en archivos ejecutables en Windows, Linux, Mac, etc</li>
+<li><strong>Pandas</strong>: analizar datos [Como un excel, pero mejor]</li>
+<li><strong>Scrapy</strong>: tomar datos de páginas web</li>
+<li><strong>PyQt</strong>: para armar ventanas</li>
+<li><strong>Pillow</strong>: trabajar con imagenes, cambiarle color, tamaño, copiar y pegar.</li>
+<li><strong>PyGame</strong>: para hacer juegos, presentaciones, gráficos</li>
+</ul>
+<h2>Un poco del lenguaje</h2>
+<p>Podemos usar python desde el interprete interactivo: Escribir en la terminal <code>$ python</code> o <code>$ python3</code></p>
+<p>Podemos ejecutar archivos .py desde la terminal con <code>$ python nombredearchivo.py</code> o <code>$ python3 nombredearchivo.py</code></p>
+<p>Usamos un <code>#</code> para los mensajes, algo que no queremos que lea el programa, son anotaciones para nosotros</p>
+<h2>Números</h2>
+<div class="highlight"><pre><span></span><span class="c1"># Suma, funciona igual para resta</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">4</span>
+<span class="c1"># División</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="mf">4.5</span>
+<span class="c1"># Resto de una división</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">9</span> <span class="o">%</span> <span class="mi">2</span>
+<span class="mi">1</span>
+<span class="c1"># Potencia</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>
+<span class="mi">8</span>
+</pre></div>
+
+
+<h2>Texto</h2>
+<div class="highlight"><pre><span></span><span class="s2">&quot;En Python esto es una cadena de texto&quot;</span>
+<span class="s1">&#39;Esto también es una cadena&#39;</span>
+<span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">Esta es una cadena</span>
+<span class="sd">De varias lineas</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mensaje</span> <span class="o">=</span> <span class="s2">&quot;hola&quot;</span> <span class="o">+</span> <span class="s2">&quot;mundo&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+<span class="n">holamundo</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;hola&quot;</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="s1">&#39;holaholahola&#39;</span>
+<span class="c1"># Cuánto es el largo de &quot;Hola mundo&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="s2">&quot;Hola mundo&quot;</span><span class="p">)</span>
+<span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;hola&quot;</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="n">Hola</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;hola&quot;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">HOLA</span>
+<span class="c1"># puedes aprender más si utilizas el dir</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">dir</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span> 
+<span class="c1"># prueba y fijate que hay ahí</span>
+</pre></div>
+
+
+<h2>Controles de flujo</h2>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;El valor es 0&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;El valor es 1&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Es otro numero&quot;</span><span class="p">)</span>
+<span class="n">El</span> <span class="n">valor</span> <span class="n">es</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>También podemos usar: else</p>
+<p>Podemos usar en lugar de <code>or, and, not</code>, <code>&lt;, &gt;, ==, !=, &gt;=, &lt;=</code></p>
+<h2>Ciclos</h2>
+<div class="highlight"><pre><span></span><span class="c1"># Utilizando el for</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">palabras</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;palabra 1&#39;</span><span class="p">,</span> <span class="s1">&#39;palabra 2&#39;</span><span class="p">,</span> <span class="s1">&#39;palabra 3&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">palabra</span> <span class="ow">in</span> <span class="n">palabras</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">palabra</span><span class="p">)</span>
+<span class="n">palabra</span> <span class="mi">1</span>
+<span class="n">palabra</span> <span class="mi">2</span>
+<span class="n">palabra</span> <span class="mi">3</span>
+
+<span class="c1"># Si queremos la secuencia de números</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="c1"># Podemos trabajar con los impares</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="mi">3</span>
+<span class="mi">5</span>
+<span class="mi">7</span>
+<span class="c1"># usamos ahora el While</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">a</span> <span class="o">+=</span> <span class="mi">100</span>
+<span class="mi">0</span>
+<span class="mi">100</span>
+<span class="mi">200</span>
+<span class="o">...</span>
+<span class="mi">800</span>
+<span class="mi">900</span>
+</pre></div>
+
+
+<h2>Funciones</h2>
+<div class="highlight"><pre><span></span><span class="c1"># Estructura básica</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">alcuadrado</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+        <span class="sd">&quot;&quot;&quot;Esta es una funcion para hacer un calculo de potencia&quot;&quot;&quot;</span>
+        <span class="n">resultado</span> <span class="o">=</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="k">return</span> <span class="n">resultado</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">alcuadrado</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="mi">16</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">resultado_almacenado</span> <span class="o">=</span> <span class="n">alcuadrado</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">resultado_almacenado</span><span class="p">)</span>
+<span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">alcuadrado</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="s1">&#39;Esta es una funcion para hacer un calculo de potencia&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">numero1</span> <span class="o">+</span> <span class="n">numero2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">resultado</span> <span class="o">=</span> <span class="n">suma</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+<span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="n">resultado</span> <span class="o">=</span> <span class="n">num1</span>
+        <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+            <span class="n">resultado</span> <span class="o">=</span> <span class="n">resultado</span> <span class="o">+</span> <span class="n">numero</span>
+        <span class="k">return</span> <span class="n">resultado</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">suma</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="mi">6</span>
+</pre></div>
+
+
+<h2>Ejemplos sencillos</h2>
+<div class="highlight"><pre><span></span><span class="c1"># recibir un mensaje</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Mensaje que quiero leer&quot;</span><span class="p">)</span>
+<span class="n">Mensaje</span> <span class="n">que</span> <span class="n">quiero</span> <span class="n">leer</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;cual es tu nombre?:&quot;</span><span class="p">)</span>
+<span class="n">cual</span> <span class="n">es</span> <span class="n">tu</span> <span class="n">nombre</span><span class="err">?</span><span class="p">:</span><span class="n">horacio</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">horacio</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># creamos una variable llamada lista donde habra varios números y un texto</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;texto&#39;</span><span class="p">]</span>
+<span class="c1"># imprimamos el cuarto elemento de la lista, en python las listas empiezan en 0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">texto</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">texto</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">])</span> 
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="mi">1</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># como saber la fecha</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ahora</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%m-%y&quot;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ahora</span><span class="p">)</span>
+<span class="mi">28</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">18</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># Escribir un archivo de texto</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;archivo_de_texto.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;un poco de texto&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="c1"># Para consultar lo que no entendemos</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">help</span><span class="p">()</span>
+<span class="n">help</span><span class="o">&gt;</span> <span class="k">print</span>
+</pre></div>
+<p class="subheader">Categoria: <a href="/category/tutoriales.html">Tutoriales</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Links internos</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Contenidos</a>
+            <li><a href="/tags.html">Etiquetas</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categorias</h5>
+        <ul class="side-nav">
+            <li><a href="/category/herramientas.html">Herramientas</a></li>
+            <li><a href="/category/tutoriales.html">Tutoriales</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links Externos</h5>
+        <ul class="side-nav">
+            <li><a href="http://www.python.org.ar/aprendiendo-python/">Tutoriales - Primeros Pasos</a></li>
+            <li><a href="https://www.python.org/">Descargar Python</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Redes Sociales</h5>
+        <ul class="side-nav">
+            <li><a href="https://www.linkedin.com/in/horacionakama/">Linkedin</a></li>
+            <li><a href="https://twitter.com/HoracioNakama/">Twitter</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>HoracioNakama by HoracioNakama</p>
+            </div>
+            </div>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111494047-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111494047-1');
+    </script>
+
+</footer>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Qué es Ipython?</title>
+
+    <link rel="stylesheet" href="/theme/css/normalize.css" />
+    <link rel="stylesheet" href="/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="/theme/css/style.css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" />	
+    <script src="/theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1>HoracioNakama</h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+    <li><a href="" class="button secondary small">INICIO</a></li>
+
+            <li><a href="/pages/quien-soy.html" class="button secondary small">Quién soy?</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="/posts/2017/Dec/27/que-es-ipython.html" rel="bookmark"
+        title="Permalink to Qué es Ipython?">Qué es Ipython?</a></h3>
+    </header>
+
+<h6 class="subheader" title="2017-12-27T00:00:00-03:00">Wed 27 December 2017
+</h6>
+
+
+    <p>Este es una breve reseña sobre Ipython, una herramienta muy útil si quieres hacer pruebas rápidas de tus codigos, pero además para conocer más sobre Jupyter Notebook.</p>
+<p>Según WIkipedia es:</p>
+<p>IPython es un shell interactivo que añade funcionalidades extra al modo interactivo incluido con Python, como resaltado de líneas y errores mediante colores, una sintaxis adicional para el shell, autocompletado mediante tabulador de variables, módulos y atributos; entre otras funcionalidades. Es un componente del paquete SciPy.</p>
+<p>Qué significa todo esto?</p>
+<p>Ustedes si abren ahora una terminal o el CMD de Windows, algo que se debe ver como una pantalla negra donde solo se puede usar texto. Es muy común familiarizarse con ella en Linux, pero no en Windows porque nos acostumbramos a usar ventanas.</p>
+<p><img alt="ipython-01" src="/images/ipython-01.png"></p>
+<p>Consejo: si van a empezar a programar haganse amigo de la terminal (Linux) o de la CMD de Windows. ¿Por qué? Porque les servirá para entender como hablan otros programadores y tecnicos afines, aún si no planean ser programadores profesionales es útil saber como funciona.</p>
+<p>Ok, volvamos. Si en la terminal escriben:</p>
+<div class="highlight"><pre><span></span>$ python
+
+Python <span class="m">3</span>.4.3 <span class="o">(</span>default, Sep <span class="m">14</span> <span class="m">2016</span>, <span class="m">12</span>:36:27<span class="o">)</span> 
+<span class="o">[</span>GCC <span class="m">4</span>.8.4<span class="o">]</span> on linux
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt;print<span class="o">(</span><span class="s1">&#39;Hola Nakamas&#39;</span><span class="o">)</span>
+</pre></div>
+
+
+<p>Acaban de ingresar al Modo interactivo de Python, lo que ahora escriban ahí será codigo Python. Por ejemplo el print('Hola Nakamas'), si quieren salir de ahí escriban "exit()" sin las comillas y volveran a donde estaban antes.</p>
+<p>Ok siguiendo con la definición menciona que es un shell interactivo, significa que es como el Modo interactivo de Python. Algunos definen a Ipython como "El modo interactivo pero con esteroides"</p>
+<p>Para continuar pueden instalar ipython (si tienen python en su computadora) con el siguien comando</p>
+<div class="highlight"><pre><span></span>$ pip install ipython
+</pre></div>
+
+
+<p>Terminada la instalación prueben lo siguiente:</p>
+<div class="highlight"><pre><span></span>$ ipython
+
+Python <span class="m">3</span>.5.4 <span class="o">(</span>default, Oct <span class="m">13</span> <span class="m">2017</span>, <span class="m">11</span>:22:58<span class="o">)</span> 
+Type <span class="s1">&#39;copyright&#39;</span>, <span class="s1">&#39;credits&#39;</span> or <span class="s1">&#39;license&#39;</span> <span class="k">for</span> more information
+IPython <span class="m">6</span>.2.1 -- An enhanced Interactive Python. Type <span class="s1">&#39;?&#39;</span> <span class="k">for</span> help.
+
+In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="m">2</span>+2
+Out<span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="m">4</span>
+</pre></div>
+
+
+<p>Notan que es más colorido que el interprete interactivo de python, además si escriben "pr" y presionan Tab les apareceran opciones.</p>
+<p><a href="/images/ipython-02.png">ipython-02</a></p>
+<p>Creo que con todo esto podemos entender un poquito más sobre Ipython, esto nos permitirá entender que es Jupyter Notebook, podemos ahora hacer pruebas de nuestros codigos en ipython y entendemos un poco más de este ecosistema de herramientas que tiene python para los científicos. </p>
+<p class="subheader">Categoria: <a href="/category/herramientas.html">Herramientas</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Links internos</h5>
+        <ul class="side-nav">
+            <li><a href="/archives.html">Contenidos</a>
+            <li><a href="/tags.html">Etiquetas</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categorias</h5>
+        <ul class="side-nav">
+            <li><a href="/category/herramientas.html">Herramientas</a></li>
+            <li><a href="/category/tutoriales.html">Tutoriales</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links Externos</h5>
+        <ul class="side-nav">
+            <li><a href="http://www.python.org.ar/aprendiendo-python/">Tutoriales - Primeros Pasos</a></li>
+            <li><a href="https://www.python.org/">Descargar Python</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Redes Sociales</h5>
+        <ul class="side-nav">
+            <li><a href="https://www.linkedin.com/in/horacionakama/">Linkedin</a></li>
+            <li><a href="https://twitter.com/HoracioNakama/">Twitter</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>HoracioNakama by HoracioNakama</p>
+            </div>
+            </div>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111494047-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111494047-1');
+    </script>
+
+</footer>
