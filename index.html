@@ -51,18 +51,21 @@
         
 
             <article>
-                <a href="/posts/2018/Jan/05/introduccion-a-python.html"><h3 class="article-title">Introducción a Python</h3></a>
-<h6 class="subheader" title="2018-01-05T00:00:00-03:00">Fri 05 January 2018
+                <a href="/posts/2018/may/10/pasando-a-un-sistema-gnu-linux.html"><h3 class="article-title">Pasando a un sistema GNU-LInux</h3></a>
+<h6 class="subheader" title="2018-05-10T00:00:00-03:00">jue 10 mayo 2018
 </h6>
 
 
-<p>Estuve participando del Flisol 2018 Purmamarca, para quienes no conozcan que es un Flisol les dejo este <a href="https://flisol.info/">link</a>. Dado que hice la charla en Markdown, y usando Typora (un editor de Markdown que quizás le haga un post más adelante) me permitió poder exportarlo a pdf, html y por supuesto …</p><p class="subheader">Categoria: <a href="/category/tutoriales.html">Tutoriales</a>
+<p>Les contaré un poco sobre el traspaso de un sistema operativo muy conocido al que llamare "W" a GNU-Linux.</p>
+<p>Empecemos quitando los miedos:</p>
+<ul>
+<li><strong>Tengo que saber algo de programación para usar Linux?</strong> No, para nada. Linux tiene ventanas, menues, un boton para cerrar la ventana, etc. [Tiene una parte en …</li></ul><p class="subheader">Categoria: <a href="/category/experiencias.html">Experiencias</a>
 
 </p>
 
 
 
-<p><a href="/posts/2018/Jan/05/introduccion-a-python.html#disqus_thread">comments</a></p>                <a class="button radius secondary small right" href="/posts/2018/Jan/05/introduccion-a-python.html">Leer más...</a>
+<p><a href="/posts/2018/may/10/pasando-a-un-sistema-gnu-linux.html#disqus_thread">comments</a></p>                <a class="button radius secondary small right" href="/posts/2018/may/10/pasando-a-un-sistema-gnu-linux.html">Leer más...</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -72,178 +75,59 @@
 
         
 
-
             <article>
-                <a href="/posts/2017/Dec/27/que-es-ipython.html"><h3 class="article-title">Qué es Ipython?</h3></a>
-<h6 class="subheader" title="2017-12-27T00:00:00-03:00">Wed 27 December 2017
+                <a href="/posts/2018/abr/29/introduccion-a-python.html"><h3 class="article-title">Introducción a Python</h3></a>
+<h6 class="subheader" title="2018-04-29T00:00:00-03:00">dom 29 abril 2018
 </h6>
 
 
-<p>Este es una breve reseña sobre Ipython, una herramienta muy útil si quieres hacer pruebas rápidas de tus codigos, pero además para conocer más sobre Jupyter Notebook.</p>
-<p>Según WIkipedia es:</p>
-<p>IPython es un shell interactivo que añade funcionalidades extra al modo interactivo incluido con Python, como resaltado de líneas y errores mediante colores, una sintaxis adicional para el shell, autocompletado mediante tabulador de variables, módulos y atributos; entre otras funcionalidades. Es un componente del paquete SciPy.</p>
-<p>Qué significa todo esto?</p>
-<p>Ustedes si abren ahora una terminal o el CMD de Windows, algo que se debe ver como una pantalla negra donde solo se puede usar texto. Es muy común familiarizarse con ella en Linux, pero no en Windows porque nos acostumbramos a usar ventanas.</p>
-<p><img alt="ipython-01" src="/images/ipython-01.png"></p>
-<p>Consejo: si van a empezar a programar haganse amigo de la terminal (Linux) o de la CMD de Windows. ¿Por qué? Porque les servirá para entender como hablan otros programadores y tecnicos afines, aún si no planean ser programadores profesionales es útil saber como funciona.</p>
-<p>Ok, volvamos. Si en la terminal escriben:</p>
-<div class="highlight"><pre><span></span>$ python
-
-Python <span class="m">3</span>.4.3 <span class="o">(</span>default, Sep <span class="m">14</span> <span class="m">2016</span>, <span class="m">12</span>:36:27<span class="o">)</span> 
-<span class="o">[</span>GCC <span class="m">4</span>.8.4<span class="o">]</span> on linux
-Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
-&gt;&gt;&gt;print<span class="o">(</span><span class="s1">&#39;Hola Nakamas&#39;</span><span class="o">)</span>
-</pre></div>
-
-
-<p>Acaban de ingresar al Modo interactivo de Python, lo que ahora escriban ahí será codigo Python. Por ejemplo el print('Hola Nakamas'), si quieren salir de ahí escriban "exit()" sin las comillas y volveran a donde estaban antes.</p>
-<p>Ok siguiendo con la definición menciona que es un shell interactivo, significa que es como el Modo interactivo de Python. Algunos definen a Ipython como "El modo interactivo pero con esteroides"</p>
-<p>Para continuar pueden instalar ipython (si tienen python en su computadora) con el siguien comando</p>
-<div class="highlight"><pre><span></span>$ pip install ipython
-</pre></div>
-
-
-<p>Terminada la instalación prueben lo siguiente:</p>
-<div class="highlight"><pre><span></span>$ ipython
-
-Python <span class="m">3</span>.5.4 <span class="o">(</span>default, Oct <span class="m">13</span> <span class="m">2017</span>, <span class="m">11</span>:22:58<span class="o">)</span> 
-Type <span class="s1">&#39;copyright&#39;</span>, <span class="s1">&#39;credits&#39;</span> or <span class="s1">&#39;license&#39;</span> <span class="k">for</span> more information
-IPython <span class="m">6</span>.2.1 -- An enhanced Interactive Python. Type <span class="s1">&#39;?&#39;</span> <span class="k">for</span> help.
-
-In <span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="m">2</span>+2
-Out<span class="o">[</span><span class="m">1</span><span class="o">]</span>: <span class="m">4</span>
-</pre></div>
-
-
-<p>Notan que es más colorido que el interprete interactivo de python, además si escriben "pr" y presionan Tab les apareceran opciones.</p>
-<p><a href="/images/ipython-02.png">ipython-02</a></p>
-<p>Creo que con todo esto podemos entender un poquito más sobre Ipython, esto nos permitirá entender que es Jupyter Notebook, podemos ahora hacer pruebas de nuestros codigos en ipython y entendemos un poco más de este ecosistema de herramientas que tiene python para los científicos. </p><p class="subheader">Categoria: <a href="/category/herramientas.html">Herramientas</a>
+<p>Estuve participando del Flisol 2018 Purmamarca, para quienes no conozcan que es un Flisol les dejo este <a href="https://flisol.info/">link</a>. Dado que hice la charla en Markdown, y usando Typora (un editor de Markdown que quizás le haga un post más adelante) me permitió poder exportarlo a pdf, html y por supuesto …</p><p class="subheader">Categoria: <a href="/category/tutoriales.html">Tutoriales</a>
 
 </p>
 
 
 
-<p><a href="/posts/2017/Dec/27/que-es-ipython.html#disqus_thread">comments</a></p>            </article>
+<p><a href="/posts/2018/abr/29/introduccion-a-python.html#disqus_thread">comments</a></p>                <a class="button radius secondary small right" href="/posts/2018/abr/29/introduccion-a-python.html">Leer más...</a>
+                <hr  class="gradient"/>
+            </article>
+
+
+                <hr  class="gradient"/>
+
 
         
 
-
             <article>
-                <a href="/posts/2017/Dec/17/abrir-archivos-excel-pandas.html"><h3 class="article-title">Abrir archivos excel con pandas</h3></a>
-<h6 class="subheader" title="2017-12-17T00:00:00-03:00">Sun 17 December 2017
+                <a href="/posts/2017/dic/27/que-es-ipython.html"><h3 class="article-title">Qué es Ipython?</h3></a>
+<h6 class="subheader" title="2017-12-27T00:00:00-03:00">mié 27 diciembre 2017
 </h6>
 
 
-<h4>Breve Introducción</h4>
-<p>Por años el excel fue mi fiel compañero para trabajos de investigación, debido a la facilidad con que podía para hacer cálculos, graficos, etc. Pero a medida que mis datos se han aumentando, los calculos y los gráficos se han complejizado ese programa me ha quedado chico.</p>
-<p>Programando con python como lenguaje de programación hay muchas librerías muy útiles para abrir excel: <a href="https://openpyxl.readthedocs.io/en/default/#">Openpyxl</a>, <a href="http://xlsxwriter.readthedocs.io/">XlsxWriter</a>, y <a href="https://pandas.pydata.org/">Pandas</a></p>
-<p>En este breve tutorial utilizaremos Pandas debido a su flexibilidad y cantidad de herramientas. Mi recomendación es: utilizar Pandas si van a trabajar con muchos datos (porque tiene muchas herramientas) y aprovechar las otras liberías si quieren hacer desarrollo (Armarse programitas jeje) y solo quieren guardar datos en un archivo excel. Pero es una sugerencia, siempre es bueno analizar cada uno sus propios proyectos y elegir las herramientas más acordes.</p>
-<h4>Requisitos</h4>
-<p>Pandas version 0.21</p>
-<h4>Datos</h4>
-<p>Para este tutorial utilizaremos un Dataset descargado de Kaggle: <a href="https://www.kaggle.com/grubenm/austin-weather">Austin Weather</a></p>
-<p>El archivo original estaba en .CSV, yo lo modifique agregandole en las primeras filas unos metadatos: Nombres de columnas, Unidades, etc.
-Pueden bajarse el archivo <a href="/files/austin_weather.xlsx">aquí</a></p>
-<p>Primero importaremos las librerías necesarias</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-</pre></div>
+<p>Este es una breve reseña sobre Ipython, una herramienta muy útil si quieres hacer pruebas rápidas de tus codigos, pero además para conocer más sobre Jupyter Notebook.</p>
+<p>Según WIkipedia es:</p>
+<p>IPython es un shell interactivo que añade funcionalidades extra al modo interactivo incluido con Python, como resaltado de líneas y …</p><p class="subheader">Categoria: <a href="/category/herramientas.html">Herramientas</a>
+
+</p>
 
 
-<p>Los archivos están guardados en la misma carpeta que el donde estoy ejecutando el codigo, por eso no es necesario colocar carpetas o subcarpetas en la dirección.</p>
-<div class="highlight"><pre><span></span><span class="n">ipath</span> <span class="o">=</span> <span class="s1">&#39;austion_weather.xlsx&#39;</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
+
+<p><a href="/posts/2017/dic/27/que-es-ipython.html#disqus_thread">comments</a></p>                <a class="button radius secondary small right" href="/posts/2017/dic/27/que-es-ipython.html">Leer más...</a>
+                <hr  class="gradient"/>
+            </article>
 
 
-<p>Si ejecutan esto les debería mostrar las primeras 5 filas del archivo excel. Está bastante feo porque solo la primera columna tiene datos.</p>
-<p><img alt="Pandas" src="/images/pandas-excel-01.png"></p>
-<p>Vamos a saltarnos unas cuantas filas para encontrar los datos.</p>
-<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
+                <hr  class="gradient"/>
 
 
-<p><img alt="Pandas" src="/images/pandas-excel-02.png"></p>
-<p>Eso está mejor verdad? Ahora pandas me muestra los titulos de la columna como ser: Date, TempAvgF, TempLowF, etc</p>
-<p>Ahora veamos algo que no sé ve a simple vista. Cómo son los datos que tenemos? Para eso ejecutamos:</p>
-<div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
+        
+
+            <article>
+                <a href="/posts/2017/dic/17/abrir-archivos-excel-pandas.html"><h3 class="article-title">Abrir archivos excel con pandas</h3></a>
+<h6 class="subheader" title="2017-12-17T00:00:00-03:00">dom 17 diciembre 2017
+</h6>
 
 
-<p>Esto nos debería mostrar los detalles por cada columna:</p>
-<div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="s1">&#39;&gt;</span>
-<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">1319</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">1318</span>
-<span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">21</span> <span class="n">columns</span><span class="p">):</span>
-<span class="n">Date</span>                          <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">TempHighF</span>                     <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">TempAvgF</span>                      <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">TempLowF</span>                      <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">DewPointHighF</span>                 <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">DewPointAvgF</span>                  <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">DewPointLowF</span>                  <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">HumidityHighPercent</span>           <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">HumidityAvgPercent</span>            <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">HumidityLowPercent</span>            <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">SeaLevelPressureHighInches</span>    <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">SeaLevelPressureAvgInches</span>     <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">SeaLevelPressureLowInches</span>     <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">VisibilityHighMiles</span>           <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">VisibilityAvgMiles</span>            <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">VisibilityLowMiles</span>            <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">WindHighMPH</span>                   <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">WindAvgMPH</span>                    <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">WindGustMPH</span>                   <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">PrecipitationSumInches</span>        <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">Events</span>                        <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">dtypes</span><span class="p">:</span> <span class="n">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
-<span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">216.5</span><span class="o">+</span> <span class="n">KB</span>
-</pre></div>
-
-
-<p>Qué leemos? Resumiendo: cantidad de datos por columna, qué tipo de datos es (object, int64) Object es una mezcla de datos (texto, números, etc. Pandas llama así a las columnas con datos mixtos) y el int64, se refiere a números enteros.</p>
-<p>Hay más información, pero por ahora esto es todo lo que nos interesa.</p>
-<p>Una tabla como está nos puede dar problemas para trabajar. ¿Por qué? Porque por ejemplo no puedo sacar datos de estadísticos con columnas que tienen datos de texto y números. No puedo sacar promedios si Pandas no reconoce a los datos como números.</p>
-<p>Qué ocurre aquí? Por qué Pandas me dice que la columna de DewPointAvgF tiene texto y números. Si revisan esa columna verán que cuando no hay datos no dejan la celda vacía, colocan un guión (-), un ejemplo es el 14-06-2014 o el 10-08-2015. Esto hace que Pandas crea que hay texto y número... y tiene razón!!!</p>
-<p>Vamos a avisarle a Pandas que los guiones significan datos inexistentes. Eso se llama NaN Values, y Pandas si reconoce esos datos, los considera datos inexistentes.</p>
-<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">ipath</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="s1">&#39;&gt;</span>
-<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">1319</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">1318</span>
-<span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">21</span> <span class="n">columns</span><span class="p">):</span>
-<span class="n">Date</span>                          <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">TempHighF</span>                     <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">TempAvgF</span>                      <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">TempLowF</span>                      <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">int64</span>
-<span class="n">DewPointHighF</span>                 <span class="mi">1312</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">DewPointAvgF</span>                  <span class="mi">1312</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">DewPointLowF</span>                  <span class="mi">1312</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">HumidityHighPercent</span>           <span class="mi">1317</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">HumidityAvgPercent</span>            <span class="mi">1317</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">HumidityLowPercent</span>            <span class="mi">1317</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">SeaLevelPressureHighInches</span>    <span class="mi">1316</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">SeaLevelPressureAvgInches</span>     <span class="mi">1316</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">SeaLevelPressureLowInches</span>     <span class="mi">1316</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">VisibilityHighMiles</span>           <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">VisibilityAvgMiles</span>            <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">VisibilityLowMiles</span>            <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">WindHighMPH</span>                   <span class="mi">1317</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">WindAvgMPH</span>                    <span class="mi">1317</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">WindGustMPH</span>                   <span class="mi">1315</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="n">float64</span>
-<span class="n">PrecipitationSumInches</span>        <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">Events</span>                        <span class="mi">1319</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span> <span class="nb">object</span>
-<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">216.5</span><span class="o">+</span> <span class="n">KB</span>
-</pre></div>
-
-
-<p>Cambio, verdad? Ahora Pandas me da nuevos tipos de datos. Los float64, que significan que son datos con comas, o sea, decimales.</p>
-<p>Las ultimas dos columnas continuan siendo object, debido a que PrecipitationSumInches tiene un valor de trazas (T). Cada vez que precipito/llovió menos de 0.01 inches (pulgadas) colocaron T en la celda. No es un dato inexistente, y debe ser tratado de una forma diferente a la anterior.</p>
-<p>La columna Events tiene descripciones de los eventos, podemos dejarlo en texto.</p>
-<p>Bien... En proximos tutoriales veremos como convertir la columna Date en tipo DateTime, esto nos permitira trabajar estos datos como una serie de tiempo.</p>
-<p>Cualquier duda pueden dejarla en los comentarios, o sino buscarme en las redes sociales.</p>
-<p>Nota: Las imagenes son del Jupyter Notebook. Más adelante hablaré de esa herramienta, pero si ejecutan los codigos en algun IDE (Spyder, Pycharm, etc.) o de la consola interactiva de Python no deberían tener problemas en obtener los mismos resultados.</p><p class="subheader">Categoria: <a href="/category/tutoriales.html">Tutoriales</a>
+<p>Excel es un programa muy difundido en el mundo científico, aquí aprenderas como abrir archivos de excel (.xls, xlsx) utilizando una librería científica de Python muy difundida llamada Pandas.</p><p class="subheader">Categoria: <a href="/category/tutoriales.html">Tutoriales</a>
 
     Etiquetas: 
     <a href="/tag/pandas.html">Pandas </a>
@@ -253,7 +137,13 @@ Pueden bajarse el archivo <a href="/files/austin_weather.xlsx">aquí</a></p>
 
 
 
-<p><a href="/posts/2017/Dec/17/abrir-archivos-excel-pandas.html#disqus_thread">comments</a></p>            </article>
+<p><a href="/posts/2017/dic/17/abrir-archivos-excel-pandas.html#disqus_thread">comments</a></p>                <a class="button radius secondary small right" href="/posts/2017/dic/17/abrir-archivos-excel-pandas.html">Leer más...</a>
+                <hr  class="gradient"/>
+            </article>
+
+
+                <hr  class="gradient"/>
+
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
@@ -280,6 +170,7 @@ Pueden bajarse el archivo <a href="/files/austin_weather.xlsx">aquí</a></p>
 		
         <h5 class="sidebar-title">Categorias</h5>
         <ul class="side-nav">
+            <li><a href="/category/experiencias.html">Experiencias</a></li>
             <li><a href="/category/herramientas.html">Herramientas</a></li>
             <li><a href="/category/tutoriales.html">Tutoriales</a></li>
    
